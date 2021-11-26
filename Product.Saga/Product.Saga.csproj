@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+    <UserSecretsId>b8e54239-398c-48cb-8ab6-1325ebff0ab7</UserSecretsId>
+    <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MassTransit.EntityFrameworkCore" Version="7.3.0-develop.297" />
+    <PackageReference Include="MassTransit.RabbitMQ" Version="7.3.0-develop.297" />
+    <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.10.14" />
+     <PackageReference Include="MassTransit" Version="7.3.0-develop.297" />
+    <PackageReference Include="MassTransit.AspNetCore" Version="7.2.0-develop.103" />
+  </ItemGroup>
+
+</Project>
