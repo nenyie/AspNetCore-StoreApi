@@ -1,0 +1,10 @@
+C:\Users\HP\Desktop\#f00000\StoreApi\Product.BackgroundTasks\bin\Debug\netcoreapp3.1\Product.BackgroundTasks.deps.json
+C:\Users\HP\Desktop\#f00000\StoreApi\Product.BackgroundTasks\bin\Debug\netcoreapp3.1\Product.BackgroundTasks.dll
+C:\Users\HP\Desktop\#f00000\StoreApi\Product.BackgroundTasks\bin\Debug\netcoreapp3.1\Product.BackgroundTasks.pdb
+C:\Users\HP\Desktop\#f00000\StoreApi\Product.BackgroundTasks\obj\Debug\netcoreapp3.1\Product.BackgroundTasks.AssemblyInfoInputs.cache
+C:\Users\HP\Desktop\#f00000\StoreApi\Product.BackgroundTasks\obj\Debug\netcoreapp3.1\Product.BackgroundTasks.AssemblyInfo.cs
+C:\Users\HP\Desktop\#f00000\StoreApi\Product.BackgroundTasks\obj\Debug\netcoreapp3.1\Product.BackgroundTasks.csproj.CoreCompileInputs.cache
+C:\Users\HP\Desktop\#f00000\StoreApi\Product.BackgroundTasks\obj\Debug\netcoreapp3.1\Product.BackgroundTasks.dll
+C:\Users\HP\Desktop\#f00000\StoreApi\Product.BackgroundTasks\obj\Debug\netcoreapp3.1\Product.BackgroundTasks.pdb
+C:\Users\HP\Desktop\#f00000\StoreApi\Product.BackgroundTasks\obj\Debug\netcoreapp3.1\Product.BackgroundTasks.csproj.AssemblyReference.cache
+C:\Users\HP\Desktop\#f00000\StoreApi\Product.BackgroundTasks\obj\Debug\netcoreapp3.1\Product.BackgroundTasks.GeneratedMSBuildEditorConfig.editorconfig

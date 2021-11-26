@@ -1,0 +1,13 @@
+C:\Users\HP\Desktop\#f00000\StoreApi\Stores.Infrastructure\bin\Debug\netcoreapp3.1\Stores.Infrastructure.deps.json
+C:\Users\HP\Desktop\#f00000\StoreApi\Stores.Infrastructure\bin\Debug\netcoreapp3.1\Stores.Infrastructure.dll
+C:\Users\HP\Desktop\#f00000\StoreApi\Stores.Infrastructure\bin\Debug\netcoreapp3.1\Stores.Infrastructure.pdb
+C:\Users\HP\Desktop\#f00000\StoreApi\Stores.Infrastructure\obj\Debug\netcoreapp3.1\Stores.Infrastructure.AssemblyInfoInputs.cache
+C:\Users\HP\Desktop\#f00000\StoreApi\Stores.Infrastructure\obj\Debug\netcoreapp3.1\Stores.Infrastructure.AssemblyInfo.cs
+C:\Users\HP\Desktop\#f00000\StoreApi\Stores.Infrastructure\obj\Debug\netcoreapp3.1\Stores.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\HP\Desktop\#f00000\StoreApi\Stores.Infrastructure\obj\Debug\netcoreapp3.1\Stores.Infrastructure.dll
+C:\Users\HP\Desktop\#f00000\StoreApi\Stores.Infrastructure\obj\Debug\netcoreapp3.1\Stores.Infrastructure.pdb
+C:\Users\HP\Desktop\#f00000\StoreApi\Stores.Infrastructure\obj\Debug\netcoreapp3.1\Stores.Infrastructure.csproj.AssemblyReference.cache
+C:\Users\HP\Desktop\#f00000\StoreApi\Stores.Infrastructure\bin\Debug\netcoreapp3.1\Stores.Domain.dll
+C:\Users\HP\Desktop\#f00000\StoreApi\Stores.Infrastructure\bin\Debug\netcoreapp3.1\Stores.Domain.pdb
+C:\Users\HP\Desktop\#f00000\StoreApi\Stores.Infrastructure\obj\Debug\netcoreapp3.1\Stores.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\HP\Desktop\#f00000\StoreApi\Stores.Infrastructure\obj\Debug\netcoreapp3.1\Stores.Infrastructure.csproj.CopyComplete

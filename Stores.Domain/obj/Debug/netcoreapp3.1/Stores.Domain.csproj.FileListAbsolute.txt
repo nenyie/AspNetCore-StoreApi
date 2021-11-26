@@ -1,0 +1,10 @@
+C:\Users\HP\Desktop\#f00000\StoreApi\Stores.Domain\bin\Debug\netcoreapp3.1\Stores.Domain.deps.json
+C:\Users\HP\Desktop\#f00000\StoreApi\Stores.Domain\bin\Debug\netcoreapp3.1\Stores.Domain.dll
+C:\Users\HP\Desktop\#f00000\StoreApi\Stores.Domain\bin\Debug\netcoreapp3.1\Stores.Domain.pdb
+C:\Users\HP\Desktop\#f00000\StoreApi\Stores.Domain\obj\Debug\netcoreapp3.1\Stores.Domain.AssemblyInfoInputs.cache
+C:\Users\HP\Desktop\#f00000\StoreApi\Stores.Domain\obj\Debug\netcoreapp3.1\Stores.Domain.AssemblyInfo.cs
+C:\Users\HP\Desktop\#f00000\StoreApi\Stores.Domain\obj\Debug\netcoreapp3.1\Stores.Domain.csproj.CoreCompileInputs.cache
+C:\Users\HP\Desktop\#f00000\StoreApi\Stores.Domain\obj\Debug\netcoreapp3.1\Stores.Domain.dll
+C:\Users\HP\Desktop\#f00000\StoreApi\Stores.Domain\obj\Debug\netcoreapp3.1\Stores.Domain.pdb
+C:\Users\HP\Desktop\#f00000\StoreApi\Stores.Domain\obj\Debug\netcoreapp3.1\Stores.Domain.csproj.AssemblyReference.cache
+C:\Users\HP\Desktop\#f00000\StoreApi\Stores.Domain\obj\Debug\netcoreapp3.1\Stores.Domain.GeneratedMSBuildEditorConfig.editorconfig

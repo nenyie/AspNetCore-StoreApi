@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "euCnjoB1fxupyRTWRSdyMumPmmL06Dh6Zhfxyi79x+OT7IxZezwSHOXVbmnvkeN/iHMeJ6oXIERRfkENhfurJA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\HP\\Desktop\\#f00000\\StoreApi\\Product.SignalrHub\\Product.SignalrHub.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\HP\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\3.1.10\\microsoft.aspnetcore.app.ref.3.1.10.nupkg.sha512"
+  ],
+  "logs": []
+}

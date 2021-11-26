@@ -55,7 +55,7 @@ namespace Product.API.Controllers
         [HttpGet]
         public string GetAllEmployeeId(int id)
         {
-            return ($"this is coming from ocelot{id}");
+            return ($"this is coming from ocelot{id} now");
         }
 
         [HttpPost]

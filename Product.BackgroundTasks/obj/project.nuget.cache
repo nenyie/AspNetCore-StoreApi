@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "h9x/Ap9ftB/T9dCzYBSuG3h0zLBWpg3V+2ROynYhhNJCYv9/c4LSutxyGLQ5C6hSupdUipt2Zg88ewHcFJ1eKQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\HP\\Desktop\\#f00000\\AspNetCore-StoreAPI\\Product.BackgroundTasks\\Product.BackgroundTasks.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\HP\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\3.1.10\\microsoft.aspnetcore.app.ref.3.1.10.nupkg.sha512",
+    "C:\\Users\\HP\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\3.1.0\\microsoft.windowsdesktop.app.ref.3.1.0.nupkg.sha512",
+    "C:\\Users\\HP\\.nuget\\packages\\microsoft.netcore.app.ref\\3.1.0\\microsoft.netcore.app.ref.3.1.0.nupkg.sha512"
+  ],
+  "logs": []
+}
