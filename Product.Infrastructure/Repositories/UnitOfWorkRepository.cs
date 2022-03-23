@@ -20,13 +20,12 @@ namespace Product.Infrastructure.Repositories
         public UnitOfWorkRepository(ProductContext productContext)
         {
             Context = productContext;
-            Product = new ProductRepository(productContext);
-           // Product = ProductRepositoy;
+            Product = new ProductRepository(productContext);        
         }
 
-        public Task<int> Save(CancellationToken cancellationToken)
+        public Task Save(CancellationToken cancellationToken)
         {
-            var result = Context.SaveChangesAsync(cancellationToken);
+            var result =  Context.SaveChangesAsync(cancellationToken);     
             return result;
         }
 

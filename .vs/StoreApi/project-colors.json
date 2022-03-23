@@ -5,7 +5,77 @@
       "ProjectGuid": "6a7b79ed-b172-4bbc-a6af-3ca37bacc52b",
       "DisplayName": "Product.API",
       "ColorIndex": 0
+    },
+    "de52ea3d-bb77-4392-9829-42fbe3fc708f": {
+      "ProjectGuid": "de52ea3d-bb77-4392-9829-42fbe3fc708f",
+      "DisplayName": "Product.BackgroundTasks",
+      "ColorIndex": 1
+    },
+    "69d6bb41-a0bc-4f0e-9993-d3b206d6cf83": {
+      "ProjectGuid": "69d6bb41-a0bc-4f0e-9993-d3b206d6cf83",
+      "DisplayName": "Product.Domain",
+      "ColorIndex": 2
+    },
+    "30ca69f3-f161-4e57-ae7e-e2e4d0c9b234": {
+      "ProjectGuid": "30ca69f3-f161-4e57-ae7e-e2e4d0c9b234",
+      "DisplayName": "Product.Infrastructure",
+      "ColorIndex": 3
+    },
+    "51d513d4-efbf-4575-ab4e-cfe5f2076e67": {
+      "ProjectGuid": "51d513d4-efbf-4575-ab4e-cfe5f2076e67",
+      "DisplayName": "Product.Saga",
+      "ColorIndex": 4
+    },
+    "02947d42-1d2e-479e-9077-576a91bab040": {
+      "ProjectGuid": "02947d42-1d2e-479e-9077-576a91bab040",
+      "DisplayName": "Identity.API",
+      "ColorIndex": 5
+    },
+    "e52a685c-a2cc-49bb-9b56-1b62e3c5a227": {
+      "ProjectGuid": "e52a685c-a2cc-49bb-9b56-1b62e3c5a227",
+      "DisplayName": "UserIdentityService",
+      "ColorIndex": 6
+    },
+    "6d8d9632-66c4-4388-aa04-ebcc317bec89": {
+      "ProjectGuid": "6d8d9632-66c4-4388-aa04-ebcc317bec89",
+      "DisplayName": "Stores.API",
+      "ColorIndex": 7
+    },
+    "dfde2d78-c08e-4958-91f0-8615fd5b4cc7": {
+      "ProjectGuid": "dfde2d78-c08e-4958-91f0-8615fd5b4cc7",
+      "DisplayName": "UserService",
+      "ColorIndex": 8
+    },
+    "b06cba4a-4387-4ee3-a057-9dc0b01254e6": {
+      "ProjectGuid": "b06cba4a-4387-4ee3-a057-9dc0b01254e6",
+      "DisplayName": "UserService",
+      "ColorIndex": 9
+    },
+    "71b69804-b430-4cb9-a2c7-d7b0c2adbc33": {
+      "ProjectGuid": "71b69804-b430-4cb9-a2c7-d7b0c2adbc33",
+      "DisplayName": "GeneralStore.API",
+      "ColorIndex": 10
+    },
+    "9fbddcc0-e327-40e4-bfbd-cd6171cbc16d": {
+      "ProjectGuid": "9fbddcc0-e327-40e4-bfbd-cd6171cbc16d",
+      "DisplayName": "GeneralStore.Infrastructure",
+      "ColorIndex": 11
+    },
+    "7978c8c7-9915-4e11-931b-07c7559f417a": {
+      "ProjectGuid": "7978c8c7-9915-4e11-931b-07c7559f417a",
+      "DisplayName": "GeneralStore.Domain",
+      "ColorIndex": 12
+    },
+    "18f2414b-4fb1-4e19-bf60-4a9c70a4380b": {
+      "ProjectGuid": "18f2414b-4fb1-4e19-bf60-4a9c70a4380b",
+      "DisplayName": "StockService.Infrasturucture",
+      "ColorIndex": 13
+    },
+    "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3": {
+      "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
+      "DisplayName": "Miscellaneous Files",
+      "ColorIndex": -1
     }
   },
-  "NextColorIndex": 1
+  "NextColorIndex": 14
 }

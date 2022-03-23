@@ -19,10 +19,7 @@ namespace Product.Infrastructure
         public DbSet<ProductEntity> Products { get; set; }
         public DbSet<ProductAmount> ProductAmounts { get; set; }
         public DbSet<ProductDescription> ProductDescriptions { get; set; }
-        public DbSet<ProductRating> ProductRating { get; set; }
-        public DbSet<LeadTime_EsTime> LeadTimeExtimates { get; set; }
-        public DbSet<LeadTime> LeadTime { get; set; }
-        public DbSet<LeadTime_Quantity> LeadTimeQuantity { get; set; }
+
         public DbSet<ProductDiscontInfo> ProductDiscount { get; set; }
         public DbSet<ProductCouponInfo> ProductCoupon { get; set; }
 
@@ -31,10 +28,6 @@ namespace Product.Infrastructure
             modelBuilder.ApplyConfiguration(new ProductEntityConfiguration());
             modelBuilder.ApplyConfiguration(new ProductAmountTypeConfiguration());
             modelBuilder.ApplyConfiguration(new ProductDescriptionTypeConfiguration());
-            modelBuilder.ApplyConfiguration(new ProductRatingTypeConfiguration());
-            modelBuilder.ApplyConfiguration(new LeadTimeEstimateTypeConfiguration());
-            modelBuilder.ApplyConfiguration(new LeadTimeTypeConfiguration());
-            modelBuilder.ApplyConfiguration(new LeadTimeQuantityTypeConfiguration());
             modelBuilder.ApplyConfiguration(new ProductDiscountTypeConfiguration());
             modelBuilder.ApplyConfiguration(new ProductCouponTypeConfiguration());
         }

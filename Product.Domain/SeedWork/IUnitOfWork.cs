@@ -10,6 +10,6 @@ namespace Product.Domain.SeedWork
      public interface IUnitOfWork
     {
         IProductRepository Product { get; }
-        Task<int> Save(CancellationToken cancellationToken);
+        Task Save(CancellationToken cancellationToken);
     }
 }

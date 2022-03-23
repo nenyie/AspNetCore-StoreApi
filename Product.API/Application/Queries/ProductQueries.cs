@@ -17,30 +17,5 @@ namespace Product.API.Application.Queries
             ProductConnectionString = productConnectionString;
         }
 
-        public Task<IEnumerable<ProductDto>> GetAllProduct()
-        {
-            throw new NotImplementedException();
-        }
-
-        public Task<ProductDto> GetProductById(int id)
-        {
-            throw new NotImplementedException();
-        }
-
-        //public async Task<IEnumerable<ProductDto>> GetAllProduct()
-        //{
-        //    var result = await productContext.Products.ToListAsync();
-        //    return (IEnumerable<ProductDto>)result;
-        //}
-
-        //public async Task<ProductDto> GetProductById(int id)
-        //{
-        //    var result = await productContext.Products.FirstOrDefaultAsync(e => e.Id == id);
-        //    if(result == null)
-        //    {
-        //        return null;
-        //    }
-        //    return (ProductDto)result;
-        //}
     }
 }

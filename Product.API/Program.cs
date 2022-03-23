@@ -24,15 +24,15 @@ try
 
     var builder = WebApplication.CreateBuilder(args);
 
-    //builder.Host.UseSerilog((context, services, configuration) => configuration
-     //             .ReadFrom.Configuration(context.Configuration)
-     //             .ReadFrom.Services(services)
-       //           .Enrich.FromLogContext());
+    builder.Host.UseSerilog((context, services, configuration) => configuration
+                  .ReadFrom.Configuration(context.Configuration)
+                  .ReadFrom.Services(services)
+                  .Enrich.FromLogContext());
 
     builder.Host.UseServiceProviderFactory(new AutofacServiceProviderFactory(ConfigureContainer));
     static void ConfigureContainer(ContainerBuilder builder)
     {
-        //  builder.RegisterModule(new DatabaseModule(Configuration.GetConnectionString("ProductConnectionString")));
+       //  builder.RegisterModule(new DatabaseModule(Configuration.GetConnectionString("ProductConnectionString")));
         builder.RegisterModule(new DatabaseModule());
     }
 
@@ -51,6 +51,8 @@ try
     builder.Services.AddMediatR(Assembly.GetExecutingAssembly());
     builder.Services.AddAutoMapper(Assembly.GetExecutingAssembly());
     builder.Services.AddValidatorsFromAssembly(Assembly.GetExecutingAssembly());
+    builder.Services.AddMassTransitHostedService();
+
 
     builder.Services.AddMassTransit(options =>
     {
@@ -68,28 +70,22 @@ try
 
     //http://localhost:15672 this is for rabbitmq
 
-    builder.Services.AddMassTransitHostedService();
-
     builder.Services.AddCors(options =>
     {
-        options.AddPolicy("CorsPolicy",
-        builder => builder
-        .SetIsOriginAllowed((host) => true)
+        options.AddPolicy("CorsPolicy", builder => builder
+       .SetIsOriginAllowed((host) => true)
         .AllowAnyMethod()
         .AllowAnyHeader()
         .AllowCredentials());
-        //cors set up
-      
+        //cors set up    
     });
-
-
-
+    
     var app = builder.Build();
     //logs every requests
-   // app.UseSerilogRequestLogging(c =>
-    //{
-     //   c.MessageTemplate = "HTTP {RequestMethod} {RequestPath} {UserId} responded {StatusCode} in {Elapsed:0.0000}ms";
-   // });
+    app.UseSerilogRequestLogging(c =>
+    {
+        c.MessageTemplate = "HTTP {RequestMethod} {RequestPath} {UserId} responded {StatusCode} in {Elapsed:0.0000}ms";       
+    });
 
     // Configure the HTTP request pipeline.
     if (app.Environment.IsDevelopment())

@@ -6,7 +6,6 @@ namespace Product.Domain.AggregateModel.ProductAggregate
 {
     public class ProductAmount
     {
-
         public int Id { get; set; }
         public int ProductDiscount { get; set; }
         public bool GetCoupon { get; set; }
@@ -14,27 +13,20 @@ namespace Product.Domain.AggregateModel.ProductAggregate
         public int ProductEntityId { get; set; }
         public DateTime CouponExpiryDate { get; set; }    
         public int ProductPrice { get; set; }
-        public int? MinimunPrice { get; set; }
-        public int? MaximumPrice { get; set; }
         public int ProductOnSale { get; set; }
-        public int FreeShiping { get; set; }
+        public int FreeShiping { get; set; } 
         public bool IsNegotiable { get; set; }
         public ProductAmount( int productDiscount, bool getCoupon, DateTime couponExpiryDate, int productPrice,
-            int? minimunPrice, int? maximumPrice, int productOnSale, int freeShiping, bool isNegotiable)
-        {
-          
+           int productOnSale, int freeShiping, bool isNegotiable)
+        {          
             ProductDiscount = productDiscount;
             GetCoupon = getCoupon;         
             CouponExpiryDate = couponExpiryDate;
             ProductPrice = productPrice;
-            MinimunPrice = minimunPrice;
-            MaximumPrice = maximumPrice;
             ProductOnSale = productOnSale;
             FreeShiping = freeShiping;
             IsNegotiable = isNegotiable;
-        }
-           
-
+        }         
     }
 
 }

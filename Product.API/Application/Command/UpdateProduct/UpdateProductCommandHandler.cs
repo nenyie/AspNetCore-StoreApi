@@ -10,9 +10,18 @@ namespace Product.API.Application.Command.UpdteProduct
 {
     public class UpdateProductCommandHandler : IRequestHandler<UpdateProductCommand, ProductEntity>
     {
-        public Task<ProductEntity> Handle(UpdateProductCommand request, CancellationToken cancellationToken)
+        private readonly IProductRepository _ProductRepository;
+
+        public UpdateProductCommandHandler(IProductRepository productRepository)
         {
-            throw new NotImplementedException();
+            this._ProductRepository = productRepository;
+        }
+        public async Task<ProductEntity> Handle(UpdateProductCommand request, CancellationToken cancellationToken)
+        {
+            var updrequest = new ProductEntity();
+            var result = await _ProductRepository.UpdateProduct(updrequest);
+          
+            return result;
         }
     }
 }

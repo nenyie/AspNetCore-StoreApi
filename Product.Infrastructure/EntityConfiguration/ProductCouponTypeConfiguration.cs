@@ -27,7 +27,6 @@ namespace Product.Infrastructure.EntityConfiguration
 
             builder.Property<bool>(x => x.IsCouponavaliable)
                 .IsRequired();
-
         }
     }
 }

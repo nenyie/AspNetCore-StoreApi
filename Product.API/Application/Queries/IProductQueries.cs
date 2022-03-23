@@ -9,8 +9,7 @@ namespace Product.API.Application.Queries
 {
     public interface IProductQueries
     {
-        Task<ProductDto> GetProductById(int id);
-        Task<IEnumerable<ProductDto>> GetAllProduct();
-
+        //Task<ProductDto> GetProductById(int id);
+        //Task<IEnumerable<ProductDto>> GetAllProduct();
     }
 }

@@ -26,10 +26,10 @@ namespace Product.Infrastructure.EntityConfiguration
                .HasMaxLength(100)
                .IsRequired();
 
-            builder.HasOne<ProductRating>()
-                .WithOne(o => o.ProductDescription)
-                .HasForeignKey<ProductDescription>(o => o.ProductRatingId)
-                .IsRequired();
+            //builder.HasOne<ProductRating>()
+              //  .WithOne(o => o.ProductDescription)
+                //.HasForeignKey<ProductDescription>(o => o.ProductRatingId)
+                //.IsRequired();
 
             builder.Property<int>(o => o.AmountBought)
                .HasMaxLength(100)

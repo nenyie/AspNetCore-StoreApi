@@ -27,7 +27,7 @@ namespace Product.API.Application.Command.CreateProduct
         public bool IsNegotiable { get; set; }
         //select cartegory
         //public SelectCartegory SelectCartegory { get; set; }
-        //lead time
+        //lead time+++++++++++++++++++++++++++++++++++++++ 
         public string PackageDetails { get; set; } = string.Empty;
         public string Weight { get; set; } = string.Empty;
         public string Port { get; set; } = string.Empty;

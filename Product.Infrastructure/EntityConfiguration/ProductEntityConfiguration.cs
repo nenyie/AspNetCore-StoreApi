@@ -26,6 +26,31 @@ namespace Product.Infrastructure.EntityConfiguration
             builder.Property(o => o.SupplyDuration)
                 .IsRequired();
 
+            builder.Property(o => o.ProductRefNumber)
+                .IsRequired();
+
+            builder.Property(o => o.StockId)
+                .IsRequired();
+
+            builder.Property(o => o.StoreId)
+                .IsRequired();
+
+            builder.Property(o => o.CartegoryId)
+                .IsRequired();
+
+            builder.Property(o => o.CartegoryName)
+                .IsRequired();
+
+            builder.Property(o => o.VendorId)
+                .IsRequired();
+
+            builder.Property(o => o.MaximumStock)
+                .IsRequired();
+
+            builder.Property(o => o.ActivateReorderLevel)
+                .HasMaxLength(10)
+                .IsRequired();
+
             builder.HasOne<ProductDescription>()
                 .WithOne(o => o.ProductEntityAD)
                 .IsRequired()
@@ -36,17 +61,21 @@ namespace Product.Infrastructure.EntityConfiguration
                .HasForeignKey<ProductEntity>(o => o.ProductAmountID)
                .IsRequired();
 
-            builder.HasOne<ProductRating>()
-                .WithMany(o => o.ProductEntities)
-                .HasForeignKey(o => o.ProductRatingFK);
+            builder.Property(x => x.ProductVerification)
+                .HasConversion(x => x.ToString(),
+                v => (ProductVerification)Enum.Parse(typeof(ProductVerification), v));
+                
+           // builder.HasOne<ProductRating>()
+             //   .WithMany(o => o.ProductEntities)
+               // .HasForeignKey(o => o.ProductRatingFK);
 
             builder.Property(o => o.Description)
                 .IsRequired()
                 .HasMaxLength(250);
 
-            builder.HasOne<LeadTime>()
-                .WithOne(o => o.ProductEntityLeadTime)
-                .HasForeignKey<ProductEntity>(o => o.LeadTimeFK);
+           // builder.HasOne<LeadTime>()
+             //   .WithOne(o => o.ProductEntityLeadTime)
+               // .HasForeignKey<ProductEntity>(o => o.LeadTimeFK);
 
         }
     }

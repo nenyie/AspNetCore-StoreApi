@@ -1,13 +1,13 @@
 {
   "Version": 1,
-  "Hash": "RIKgAlcUvPs0ALw6cNALTJ8ZCTZ5ehX1AZpwSmavdV8=",
+  "Hash": "aw/uJE8U/6XdnbVt+KFeLRCgPsFJ3aHQXNqUqOJmqdI=",
   "Source": "Product.API",
   "BasePath": "_content/Product.API",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [
     {
-      "Identity": "C:\\Users\\HP\\Desktop\\#f00000\\StoreApi\\Product.Saga\\Product.Saga.csproj",
+      "Identity": "C:\\Users\\HP\\Desktop\\#f00000\\AspNetCore-StoreAPI\\Product.Saga\\Product.Saga.csproj",
       "Version": 1,
       "Source": "Product.Saga",
       "GetPublishAssetsTargets": "",

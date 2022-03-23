@@ -6,5 +6,6 @@ namespace Product.Domain.AggregateModel.ProductOwnerAggregate
 {
     public class ProductCapacity
     {
+        //
     }
 }

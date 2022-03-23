@@ -27,12 +27,6 @@ namespace Product.Infrastructure.EntityConfiguration
             builder.Property<bool>(o => o.GetCoupon)
                 .IsRequired();
 
-            builder.Property<int?>(o => o.MinimunPrice)
-                .IsRequired();
-
-            builder.Property<int?>(o => o.MaximumPrice)
-                .IsRequired();
-
             builder.Property<int>(o => o.ProductOnSale)
                 .IsRequired();
             

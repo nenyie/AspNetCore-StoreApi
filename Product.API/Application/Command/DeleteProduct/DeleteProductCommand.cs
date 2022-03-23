@@ -12,7 +12,7 @@ namespace Product.API.Application.Command.DeleteProduct
         public int DeeteProductId { get; set; }
         public DeleteProductCommand()
         {
-
+            
         }
     }
 }

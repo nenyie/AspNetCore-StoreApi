@@ -10,14 +10,9 @@ namespace Product.Domain.AggregateModel.ProductAggregate
         public string ProductName { get; set; }
         public string StoreName { get; set; }
         public int AmountBought { get; set; }
-
-        public ProductRating ProductRatingTT { get; set; }
-        public int ProductRatingId { get; set; }
-
+       // public List<ProductEntity> ItemsBought { get; set; }     
         public ProductEntity ProductEntityAD { get; set; }
         public int EntityId { get; set; }
-
-       // public ProductVerification ProductVerification { get; set; }
 
         public ProductDescription(        
             string productName,

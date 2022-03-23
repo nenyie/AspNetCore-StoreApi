@@ -26,9 +26,7 @@ namespace Product.Infrastructure.EntityConfiguration
              .HasMaxLength(40)
              .IsRequired();
 
-            builder.HasOne<ProductEntity>()
-                .WithOne(o => o.LeadTime)
-                .HasForeignKey<LeadTime>(o => o.ProductEntityLeadTimeFK);
+          
 
             builder.HasOne<LeadTime_EsTime>()
                 .WithOne(o => o.LeadTimePK)

@@ -1,5 +1,4 @@
 ﻿using AutoMapper;
-using MassTransit;
 using MediatR;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
@@ -23,17 +22,24 @@ namespace Product.API.Controllers
     {
         private readonly IMediator _mediator;
         private readonly ILogger<ProductController> logger;
-        private readonly ISendEndpointProvider _sendEndpointProvider;
+        //private readonly ISendEndpointProvider _sendEndpointProvider;
         private readonly IMapper _mapper;
 
         public ProductController(IMediator mediator, ILogger<ProductController> logger,
-            ISendEndpointProvider sendEndpointProvider, IMapper mapper)
+            IMapper mapper)
         {
             this.logger = logger ?? throw new ArgumentNullException(nameof(logger));
             this._mediator = mediator ?? throw new ArgumentNullException(nameof(mediator));
-            _sendEndpointProvider = sendEndpointProvider;
+           // _sendEndpointProvider = sendEndpointProvider;
             this._mapper = mapper;
         }
+
+        [HttpGet("getProduct")]
+        public string GetAllEmployeeId(int id)
+        {
+            return ($"this is coming from ocelot{id} now");
+        }
+
 
         [HttpPost]
         [ProducesResponseType((int)HttpStatusCode.OK)]
@@ -43,39 +49,25 @@ namespace Product.API.Controllers
             logger.LogInformation($"from product {command.ProductDate}");
             return await _mediator.Send(command);
         }
-
-
-        [HttpGet]
-        public string GetAllEmployee()
-        {
-            return ("this is coming from ocelot");
-        }
-
-
-        [HttpGet]
-        public string GetAllEmployeeId(int id)
-        {
-            return ($"this is coming from ocelot{id} now");
-        }
-
-        [HttpPost]
-        [Route("productToBus")]
-        public async Task<IActionResult> ProductToBus([FromBody] CreateProductCommand command)
-        {
-            //save in db
-            //before sending the data
-            //_context.savechangesAsync()
-            var endpoint = await _sendEndpointProvider.GetSendEndpoint(new Uri("queue" + "productQueue"));
-
-            await endpoint.Send<IProductMessage>(new
-            {
-                command.ProductDiscount,
-                command.ProductPrice
-            });
-            // _mapper.Map<>()
-            return Ok("success");
-            //have some time working 
-        }
+      
+        //[HttpPost]
+        //[Route("productToBus")]
+        //public async Task<IActionResult> ProductToBus([FromBody] CreateProductCommand command)
+        //{
+        //    //save in db
+        //    //before sending the data
+        //    //_context.savechangesAsync()
+        //    var endpoint = await _sendEndpointProvider.GetSendEndpoint(new Uri("queue" + "productQueue"));
+        
+        //    await endpoint.Send<IProductMessage>(new
+        //    {
+        //        command.ProductDiscount,
+        //        command.ProductPrice
+        //    });
+        //    // _mapper.Map<>()
+        //    return Ok("success");
+        //    //have some time working 
+        //}
 
     }
 }

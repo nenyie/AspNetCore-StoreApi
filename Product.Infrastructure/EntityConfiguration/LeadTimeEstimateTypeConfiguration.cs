@@ -33,9 +33,9 @@ namespace Product.Infrastructure.EntityConfiguration
             builder.Property<int>(o => o.TenToTwentyDays)
                 .IsRequired();
 
-            builder.HasOne<LeadTime>()
-                .WithOne(o => o.LeadTime_EsTime)
-                .HasForeignKey<LeadTime_EsTime>(o => o.LdTimeFk);
+           // builder.HasOne<LeadTime>()
+             //   .WithOne(o => o.LeadTime_EsTime)
+              //  .HasForeignKey<LeadTime_EsTime>(o => o.LdTimeFk);
         }
 
     }

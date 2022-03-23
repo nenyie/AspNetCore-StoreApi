@@ -2,8 +2,15 @@
   "ExpandedNodes": [
     "",
     "\\Product.API",
-    "\\Product.API\\Controllers"
+    "\\Product.API\\Application",
+    "\\Product.API\\Application\\Command",
+    "\\Product.API\\Application\\Command\\CreateProduct",
+    "\\Product.Domain",
+    "\\Product.Domain\\AggregateModel",
+    "\\Product.Domain\\AggregateModel\\ProductOwnerAggregate",
+    "\\Product.Saga",
+    "\\Product.Saga\\StateMachine"
   ],
-  "SelectedNode": "\\Product.API\\Controllers\\ProductController.cs",
+  "SelectedNode": "\\Product.API\\Application\\Command\\CreateProduct\\CreateProductCommandHandler.cs",
   "PreviewInSolutionExplorer": false
 }
