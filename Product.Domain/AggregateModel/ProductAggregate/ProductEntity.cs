@@ -14,24 +14,30 @@ namespace Product.Domain.AggregateModel.ProductAggregate
     {
         public int Id { get; set; }
         public DateTime ProductDate { get; set; }
-
+        public int ProductRefNumber { get; set; }
+        public int StockId { get; set; }
+        public int StoreId { get; set; }
+        public int CartegoryId { get; set; }
+        public string CartegoryName { get; set; }
+        public int VendorId { get; set; }
+        public string VendorName { get; set; }
+        public int MaximumStock { get; set; }
+        public bool ActivateReorderLevel { get; set; }
         public ProductDescription ProductDescription { get; set; }
         public int ProductDescriptionID { get; set; }
-
         public string Description { get; set; }
-
         public ProductAmount ProductAmount { get; set; }
         public int ProductAmountID { get; set; }
 
-        public ProductRating ProductRating { get; set; }
-        public int ProductRatingFK { get; set; }
+       // public ProductRating ProductRating { get; set; }
+       // public int ProductRatingFK { get; set; }
 
-        //public SelectCartegory SelectCartegory { get; set; }
         public string ProductContent { get; set; }
         public int SupplyAmount { get; set; }
         public string SupplyDuration { get; set; }
-        public LeadTime LeadTime { get; set; }
-        public int LeadTimeFK { get; set; }
+
+       // public LeadTime LeadTime { get; set; }
+       // public int LeadTimeFK { get; set; }    
 
         public ProductCouponInfo ProductCouponInfo { get; set; }
         public int Coupon { get; set; }
@@ -39,22 +45,21 @@ namespace Product.Domain.AggregateModel.ProductAggregate
         public ProductDiscontInfo ProductDiscountInfo { get; set; }
         public int Discount { get; set; }
 
+        public ProductVerification ProductVerification { get; set; }   
+
         public ProductEntity()
         {
 
         }
 
         public ProductEntity(DateTime productDate, ProductDescription productDescription, 
-            string description, ProductAmount productAmount,
-            ProductRating productRating,LeadTime leadTime)
+            string description, ProductAmount productAmount)
         {
-            //Id = id;
             ProductDate = productDate;
             ProductDescription = productDescription;      
             Description = description;
-            ProductAmount = productAmount;     
-            ProductRating = productRating;     
-            LeadTime = leadTime;
+            ProductAmount = productAmount;
+            //
         }
 
     }
