@@ -46,6 +46,7 @@ namespace Product.API.Controllers
         [ProducesResponseType((int)HttpStatusCode.BadRequest)]
         public async Task<ActionResult<ProductEntity>> CreateProduct(CreateProductCommand command)
         {
+            //logging something
             logger.LogInformation($"from product {command.ProductDate}");
             return await _mediator.Send(command);
         }
